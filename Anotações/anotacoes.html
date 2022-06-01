@@ -1,0 +1,84 @@
+<!--
+
+- ABAIXO A ESTRUTURA BASICO DE UM DOC HTML:
+
+<DOCTYPE html> * diz para o navegador o tipo do arquivo
+<html> * todos os elementos html precisam estar nesse doc
+    <head> * informações que o navegador necessita
+        <meta> * charset- como o navegador lê os caracteres
+        <title> * Título que aparece no navegador </title>
+    </head>
+    <body>
+        * Conteudo da pagina
+    </body>
+</html>
+
+- SEMÂNTICA: antes utilizavamos apenas divs...
+
+<section> *seção genérica de conteúdo quando não houver um elemento mais específico para isso. Ex: lista de artigos
+<header> *cabeçalho da página. Ex: contem logotipos, menus, campos de busca...
+<article> *conteudo independente de maior relevância na pagina. Ex: post de blog, noticia em uma barra lateral, bloco de comentários... OBS: um article pode ter outros elementos tipo header, cabeçalhos, paragrafos e imagens
+<aside>  *engloba conteudos realcionados ao conteudo principal Ex: artigos relacionados, biografia do autor e publicidade OBS: normalmente são representadas como barras laterais
+<footer> *rodapé do counteudo Ex: informações do autor e links relacionados OBS: ele é aceito dentro de varios elementos como article, section e até body
+<h1> - <h6> *marcam a importância dos titulos h1 o mais importante e h6 o menos. OBS: só pode haver uma tag h1
+
+- TEXTOS E LINKS:
+
+<h1> - <h6>
+<p> Parágrafo
+<a> Link. OBS: href= endereço, email ou telefone. Target= como o link vai ser aberto
+    Ex: <a href= "mailto:liviabbotelho@hotmail.com">E-mail</a>
+        <a href= "tel:27998636434">Telefone</a>
+        <a target="_blank">Link</a> _blank abre em uma nova aba
+
+- IMAGEM:
+<img> para adicionar iamgem OBS: A TAG NÃO FECHA
+    Ex: <img src="img/avatar.png"> src= caminho da imagem
+        <img alt="Foto de passaro azul"> alt= descrição da foto quando não é carregada (ACESSIBILIDADE)
+
+- LISTAS:
+<ul> lista não ordenada
+<ol> lista ordenada
+<li> itens da lista. OBS: Pode conter vários tipos, como paragrafos, imagens ou até outras listas
+-->
+
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meu site</title>
+     </head>
+     <body>
+         <header>
+             <h1>Lívia Botelho</h1>
+         </header>
+         <section>
+            <header>
+                <h2>Posts</h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Post #1</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="https://www.linkedin.com/in/lívia-barcellos-botelho-7621a8190/" target="_blank" >link</a>
+                <img src="pikachu.jpeg" alt="Meme do pikachu chocado">
+            </article>
+         </section>
+         <footer>
+            <ul>
+                <li>
+                    <a href="mailto:liviabbotelho@hotmail.com" target="_target"> liviabbotelho@hotmail.com</a>                     </a></li>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/lívia-barcellos-botelho-7621a8190/" target="_blank">Linkedin</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
+
+
+
